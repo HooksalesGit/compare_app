@@ -6,7 +6,7 @@ st.title("Compare Lists (Escribeme BB🤘)")
 st.subheader("Yo se que todavia piensas en mi, si no porque estas aqui?")
 
 with st.form("whatsapp_form"):
-    st.write("(Aprovecha y Saludame) Send a WhatsApp message")
+    st.write("(Aprovecha y Saludame) \nSend a WhatsApp message")
     submitted = st.form_submit_button("Send Helloooo🤘")
     if submitted:
         url = "https://wa.me/17865535043?text=Helloooo🤘"
