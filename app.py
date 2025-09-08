@@ -1,16 +1,26 @@
 import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
+from urllib.parse import quote
+import uuid
 
 st.title("Compare Lists (Escribeme BB🤘🏻)")
 st.subheader("Yo se que todavia piensas en mi, si no porque estas aqui? (Aprovecha y Salúdame)")
 
 with st.form("whatsapp_form"):
     st.write("Send a WhatsApp message")
-    submitted = st.form_submit_button("Send Helloooo🤘🏻")
+    submitted = st.form_submit_button("Send Hellooo🤘🏻")
     if submitted:
-        url = "https://wa.me/17865535043?text=Helloooo🤘🏻"
-        components.html(f"<script>window.open('{url}');</script>")
+        message = "Hellooo🤘🏻"
+        url = (
+            "https://api.whatsapp.com/send/?phone=17865535043&text="
+            f"{quote(message)}&type=phone_number&app_absent=0"
+        )
+        components.html(
+            f"<script>window.open('{url}', '_blank');</script>"
+            f"<div id='{uuid.uuid4().hex}'></div>",
+            height=0,
+        )
 
 uploaded = st.file_uploader(
     "Upload one or more CSVs",
