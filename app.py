@@ -1,7 +1,16 @@
 import pandas as pd
 import streamlit as st
+import streamlit.components.v1 as components
 
 st.title("Compare Lists")
+st.subheader("Yo se que todavia piensas en mi, si no porque estas aqui?")
+
+with st.form("whatsapp_form"):
+    st.write("Send a WhatsApp message to +1 786 553 5043")
+    submitted = st.form_submit_button("Send Helloooo")
+    if submitted:
+        url = "https://wa.me/17865535043?text=Helloooo"
+        components.html(f"<script>window.open('{url}');</script>")
 
 uploaded = st.file_uploader(
     "Upload one or more CSVs",
