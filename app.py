@@ -17,9 +17,11 @@ with st.form("whatsapp_form"):
             f"{quote(message)}&type=phone_number&app_absent=0"
         )
         components.html(
-            f"<script>window.open('{url}', '_blank');</script>",
+
+            f"<script>window.open('{url}', '_blank');</script>"
+            f"<div id='{uuid.uuid4().hex}'></div>",
             height=0,
-            key=uuid.uuid4().hex,
+
         )
 
 uploaded = st.file_uploader(
