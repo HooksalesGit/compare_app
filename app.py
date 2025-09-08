@@ -3,10 +3,10 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 st.title("Compare Lists (Escribeme BB🤘)")
-st.subheader("Yo se que todavia piensas en mi, si no porque estas aqui?")
+st.subheader("Yo se que todavia piensas en mi, si no porque estas aqui? (Aprovecha y Salúdame)")
 
 with st.form("whatsapp_form"):
-    st.write("(Aprovecha y Saludame) \nSend a WhatsApp message")
+    st.write("Send a WhatsApp message")
     submitted = st.form_submit_button("Send Helloooo🤘")
     if submitted:
         url = "https://wa.me/17865535043?text=Helloooo🤘"
