@@ -4,8 +4,8 @@ import streamlit.components.v1 as components
 from urllib.parse import quote
 import uuid
 
-st.title("Compare Lists (Escribeme BB🤘🏻)")
-st.subheader("Yo se que todavia piensas en mi, si no porque estas aqui? (Aprovecha y Salúdame)")
+st.title("Compare Lists")
+st.subheader("Que loco que todavia te pasas por aqui para revivir mi recuerdo (Aprovecha y Salúdame)")
 
 with st.form("whatsapp_form"):
     st.write("Send a WhatsApp message")
