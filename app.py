@@ -5,7 +5,7 @@ from urllib.parse import quote
 import uuid
 
 st.title("Compare Lists")
-st.subheader("Que loco que todavia te pasas por aqui para revivir mi recuerdo (Aprovecha y Salúdame)")
+st.subheader("Que loco que todavia te pasas por aqui para revivir mi recuerdo (Aprovecha y Salúdame🤘🏻)")
 
 with st.form("whatsapp_form"):
     st.write("Send a WhatsApp message")
