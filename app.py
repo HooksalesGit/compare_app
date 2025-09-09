@@ -6,26 +6,26 @@ import uuid
 
 st.title("Compare Lists")
 
-'''
-st.subheader("Que loco que todavia te pasas por aqui para revivir mi recuerdo (Aprovecha y Salúdame🤘🏻)")
 
-with st.form("whatsapp_form"):
-    st.write("Send a WhatsApp message")
-    submitted = st.form_submit_button("Send Hellooo🤘🏻")
-    if submitted:
-        message = "Hellooo🤘🏻"
-        url = (
-            "https://api.whatsapp.com/send/?phone=17865535043&text="
-            f"{quote(message)}&type=phone_number&app_absent=0"
-        )
-        components.html(
+#st.subheader("Que loco que todavia te pasas por aqui para revivir mi recuerdo (Aprovecha y Salúdame🤘🏻)")
 
-            f"<script>window.open('{url}', '_blank');</script>"
-            f"<div id='{uuid.uuid4().hex}'></div>",
-            height=0,
+#with st.form("whatsapp_form"):
+ #   st.write("Send a WhatsApp message")
+  #  submitted = st.form_submit_button("Send Hellooo🤘🏻")
+   # if submitted:
+    #    message = "Hellooo🤘🏻"
+     #   url = (
+      #      "https://api.whatsapp.com/send/?phone=17865535043&text="
+       #     f"{quote(message)}&type=phone_number&app_absent=0"
+        #)
+        #components.html(
 
-        )
-'''
+         #   f"<script>window.open('{url}', '_blank');</script>"
+          #  f"<div id='{uuid.uuid4().hex}'></div>",
+           # height=0,
+
+#        )
+
 
 uploaded = st.file_uploader(
     "Upload one or more CSVs",
