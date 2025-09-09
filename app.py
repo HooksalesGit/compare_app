@@ -5,6 +5,8 @@ from urllib.parse import quote
 import uuid
 
 st.title("Compare Lists")
+
+'''
 st.subheader("Que loco que todavia te pasas por aqui para revivir mi recuerdo (Aprovecha y Salúdame🤘🏻)")
 
 with st.form("whatsapp_form"):
@@ -23,6 +25,7 @@ with st.form("whatsapp_form"):
             height=0,
 
         )
+'''
 
 uploaded = st.file_uploader(
     "Upload one or more CSVs",
